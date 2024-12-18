@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foreverplus 254</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="forever.css" />
+    <link rel="stylesheet" href="shoppage.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <!-- External Script -->
+    <script src="shoppage.js"></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/logo.jpg" class="logo" alt="Logo" /></a>
+      <h1>Foreverplus 254</h1>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="concern-details..html">Skincare</a></li>
+          <li><a href="shoppage.html">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="checkout.html" id="cart-icon">
+              <img src="cart-icon.png" alt="Cart" class="cart-icon" />
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="hero">
+      <h4>Forever Living Products</h4>
+      <h2>Shop On All Products</h2>
+      <h1>Shop Now</h1>
+      <p>Delivery Also Done</p>
+      <h5>All Featured products</h5>
+    </section>
+
+    
+    <section id="product-categories">
+      <!-- Audio Category Example -->
+      <div class="audio">
+          <a href="#"> <span class="audio-title">Audio</span><img src="img/spacebudshybrid.jpg" alt="" ></a>
+      </div>
+      <div class="audio">
+          <a href="#"> <span class="audio-title">Audio</span><img src="img/spacebudshybrid.jpg" alt="" ></a>
+      </div>
+      <div class="audio">
+          <a href="#"> <span class="audio-title">Audio</span><img src="img/spacebudshybrid.jpg" alt="" ></a>
+      </div>
+      <div class="audio">
+          <a href="#"> <span class="audio-title">Audio</span><img src="img/spacebudshybrid.jpg" alt="" ></a>
+      </div>
+  </section>
+  
+   
+<!-- Featured Products Section 1: Audio category -->
+<section id="audio-category" class="section-p1">
+  <h2>Featured Audio Products</h2>
+  <div class="pro-container" id="audio-products-container"></div>
+</section>
+
+<!-- Featured Product by Slug Section -->
+<section id="product-by-slug" class="section-p1">
+  <h2>Featured Product</h2>
+  <div class="pro-container" id="product-by-slug-container"></div>
+</section>
+
+<!-- Featured Products Section 3: Wearables category -->
+<section id="wearables-category" class="section-p1">
+  <h2>Featured Wearables</h2>
+  <div class="pro-container" id="wearables-products-container"></div>
+</section>
+    
+    <section id="all-featured-products" class="section-p1">
+      
+      <div class="pro-container" id="all-featured-products-container"></div>
+    
+    
+    </section>
+    <!-- Featured Product by Slug Section -->
+    <section id="product-by-slug" class="section-p1">
+      <div class="pro-container" id="new-product-by-slug-container"></div>
+    </section>
+
+    <section id="footer" class="section-p1">
+      <div class="footer-section">
+        <div class="footer-banner">
+          <img src="img/footer-banner.png" alt="Footer Banner" />
+        </div>
+        <div class="footer-section-2">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Contact Us</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="footer-section-3">
+          <h2>FlagShip Gadgets Kenya</h2>
+          <span
+            >Dealers in refurbished phones and genuine accessories from renowned
+            distributors.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <style>
+
+
+
+
+
+
+      #hero h4 {
+        padding-bottom: 15px;
+        font-size: 45px;
+      }
+
+      #hero h1 {
+        color: rgb(62, 63, 151);
+        font-size: 45px;
+      }
+
+      #hero h3 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 45px;
+      }
+
+      h6 {
+        font-size: 45px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+      }
+
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+
+
+      h5 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center; /* Center the title */
+  position: relative; /* Ensure it’s part of the stacking context */
+  z-index: 10; /* Keeps the title above everything */
+  margin-top: 240px; /* Remove unnecessary spacing */
+  padding: 20px 0;
+   /* Add space above and below the title */
+ 
+}
+
+      .pro-container {
+  margin-top: -490px; /* Keeps products moving upwards */
+  position: relative; /* Ensures it's part of a stacking context */
+  z-index: 1; 
+  
+}
+
+@media (max-width: 768px) {
+    #header {
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      align-items: center;    /* Center everything horizontally */
+      text-align: center;
+      background-color: rgb(91, 91, 232); /* Blue background */
+      padding: 10px 0; /* Add padding above and below */
+      position: fixed; /* Keep header fixed at the top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  }
+     
+    </style>
+
+    <script>
+ 
+ function displayProducts(containerId, productsToDisplay) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = ""; // Clear existing products
+  
+    productsToDisplay.forEach((product) => {
+      const productElement = document.createElement("div");
+      productElement.classList.add("pro");
+      productElement.innerHTML = `
+        <a href="product.html?slug=${product.slug}">
+          <img src="${product.image}" alt="${product.name}">
+          <div class="des">
+            <p>${product.category}</p>
+            <h5>${product.name}</h5>
+            <span>${product.description}</span>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Ksh ${product.price}</h4>
+          </div>
+        </a>
+      `;
+      container.appendChild(productElement);
+    });
+  }
+  
+
+  
+        // Function to filter products based on category
+      function filterByCategory(category) {
+        return products.filter((product) => product.category === category);
+      }
+
+      // Function to filter products by slug
+      function filterBySlug(slug) {
+        return products.filter((product) => product.slug === slug);
+      }
+      // Function to filter products by multiple slugs
+      function filterBySlugs(slugs) {
+        return products.filter((product) => slugs.includes(product.slug));
+      }
+
+      // Load products into the four featured sections
+      window.onload = function () {
+       
+       // Hide sections
+  document.getElementById("audio-category").style.display = "none";
+  document.getElementById("product-by-slug").style.display = "none";
+  document.getElementById("wearables-category").style.display = "none";
+
+
+
+        // Featured Section 4: All featured products
+        displayProducts("all-featured-products-container", products); // Display all products
+
+        // Define the slugs you want to display in this section
+        const selectedSlugs = ["galaxy-tab-s7", "airpods-pro"];
+
+        // Get the products that match the selected slugs
+        const filteredProducts = filterBySlugs(selectedSlugs);
+      };
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
